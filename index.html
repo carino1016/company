@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="중소벤처기업부(MSS) 소개 웹 앱 - 대한민국 중소·벤처기업과 소상공인의 든든한 동반자. 맞춤 혜택 자가진단 설문, 주요 정책, 최신 뉴스 및 온누리상품권 계산기 제공.">
+  <title>중소벤처기업부(MSS) - 함께 도약하는 따뜻한 경제</title>
+  
+  <!-- 시스템 글꼴 및 기본 스타일 연결 -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 상단 공공 알림 배너 -->
+  <aside class="gov-top-bar" aria-label="대한민국 공식 부처 안내">
+    <div class="container top-bar-content">
+      <div class="gov-identity">
+        <svg class="kr-flag-icon" viewBox="0 0 36 24" width="20" height="14" aria-hidden="true">
+          <rect width="36" height="24" fill="#ffffff" rx="2"/>
+          <circle cx="18" cy="12" r="6" fill="#c62828"/>
+          <path d="M12,12 A6,6 0 0,0 24,12 A3,3 0 0,0 18,12 A3,3 0 0,1 12,12" fill="#1565c0"/>
+        </svg>
+        <span>대한민국 중앙행정기관 | <strong>중소벤처기업부 (Ministry of SMEs and Startups)</strong></span>
+      </div>
+      <div class="top-bar-links">
+        <span class="call-badge"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 중소기업 통합콜센터 <strong>국번없이 1357</strong></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 메인 네비게이션 헤더 -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="중소벤처기업부 홈으로 이동">
+        <div class="logo-mark">
+          <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true">
+            <defs>
+              <linearGradient id="mssGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#004ea2" />
+                <stop offset="100%" stop-color="#00a3e0" />
+              </linearGradient>
+            </defs>
+            <circle cx="20" cy="20" r="18" fill="url(#mssGrad)" />
+            <path d="M12 21 L18 27 L28 14" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-dept">중소벤처기업부</span>
+          <span class="logo-sub">Ministry of SMEs and Startups</span>
+        </div>
+      </a>
+
+      <!-- 데스크톱 네비게이션 메뉴 -->
+      <nav class="main-nav" id="mainNav" aria-label="주요 메뉴">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">중기부 소개</a></li>
+          <li><a href="#survey" class="nav-link nav-highlight">✨ 혜택 자가진단</a></li>
+          <li><a href="#duties" class="nav-link">5대 주요업무</a></li>
+          <li><a href="#finder" class="nav-link">맞춤정책 찾기</a></li>
+          <li><a href="#onnuri" class="nav-link">온누리 혜택계산기</a></li>
+          <li><a href="#news" class="nav-link">최신 뉴스·동향</a></li>
+          <li><a href="#dictionary" class="nav-link">용어 사전</a></li>
+        </ul>
+      </nav>
+
+      <!-- 우측 컨트롤 버튼 (테마 토글, 바로가기) -->
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="다크 모드 전환" title="화면 테마 변경">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <a href="https://www.mss.go.kr" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm header-cta">
+          <span>공식 누리집</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+
+        <!-- 모바일 햄버거 토글 버튼 -->
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="메뉴 열기" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 히어로 섹션 -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>대한민국 경제의 든든한 버팀목</span>
+          </div>
+          <h1 class="hero-title">
+            도약하는 <span class="highlight">중소·벤처</span>,<br>
+            힘나는 <span class="highlight-sub">소상공인</span>과 함께합니다
+          </h1>
+          <p class="hero-desc">
+            중소벤처기업부는 대한민국 전체 기업의 <strong>99%</strong>, 일자리의 <strong>81%</strong>를 책임지는 
+            중소기업, 벤처·스타트업, 소상공인을 육성하고 보호하는 <strong>대한민국 중앙행정기관</strong>입니다.
+          </p>
+
+          <!-- 실시간 키워드 검색창 -->
+          <div class="hero-search-box">
+            <div class="search-input-wrapper">
+              <svg class="search-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+              <input type="text" id="globalSearchInput" placeholder="궁금한 정책이나 지원사업을 검색해보세요 (예: 온누리, 팁스, 창업, 지원금, 소상공인)">
+              <button id="clearSearchBtn" class="clear-btn" aria-label="검색어 지우기">&times;</button>
+            </div>
+            <div class="search-tags">
+              <span class="search-tag-label">인기 검색어:</span>
+              <button class="tag-chip" data-search="온누리상품권">#온누리상품권</button>
+              <button class="tag-chip" data-search="TIPS">#TIPS(팁스)</button>
+              <button class="tag-chip" data-search="소상공인 정책자금">#소상공인자금</button>
+              <button class="tag-chip" data-search="스마트공장">#스마트공장</button>
+              <button class="tag-chip" data-search="희망리턴패키지">#희망리턴</button>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#survey" class="btn btn-primary btn-lg">
+              <span>🔍 1분 혜택 자가진단 설문</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="#finder" class="btn btn-outline btn-lg">
+              <span>내게 맞는 맞춤 정책 찾기</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 핵심 통계 카드 -->
+        <div class="hero-stats-grid">
+          <div class="stat-card" data-tilt>
+            <div class="stat-icon-wrap blue">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v4"/><path d="M12 14v4"/><path d="M16 14v4"/>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">99.9<small>%</small></span>
+              <h3 class="stat-title">대한민국 기업 비중</h3>
+              <p class="stat-sub">전체 771만 기업 중 중소기업·소상공인이 차지하는 비율</p>
+            </div>
+          </div>
+
+          <div class="stat-card" data-tilt>
+            <div class="stat-icon-wrap green">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">81.3<small>%</small></span>
+              <h3 class="stat-title">국민 일자리 창출</h3>
+              <p class="stat-sub">대한민국 전체 근로자 중 중소기업 종사 근로자 비중</p>
+            </div>
+          </div>
+
+          <div class="stat-card" data-tilt>
+            <div class="stat-icon-wrap purple">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">18<small>조원+</small></span>
+              <h3 class="stat-title">역대 최대 정책 예산</h3>
+              <p class="stat-sub">창업, 스케일업, 소상공인 경영안정 및 성장을 위한 든든한 투자</p>
+            </div>
+          </div>
+
+          <div class="stat-card" data-tilt>
+            <div class="stat-icon-wrap amber">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">1,000<small>+개사</small></span>
+              <h3 class="stat-title">초격차 딥테크 육성</h3>
+              <p class="stat-sub">AI·반도체·바이오 미래 전략 산업 글로벌 유니콘 육성</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션 1: 중기부 소개 및 비전 -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">기관 소개</span>
+          <h2 class="section-title">중소벤처기업부는 어떤 일을 하나요?</h2>
+          <p class="section-desc">국민의 일상을 채우는 동네 가게부터 세계 시장을 흔드는 혁신 벤처까지, 대한민국 경제의 심장을 뛰게 합니다.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- 비전 카드 -->
+          <div class="about-vision-card">
+            <div class="vision-header">
+              <span class="vision-badge">MISSION & VISION</span>
+              <h3>중소벤처기업부의 약속</h3>
+            </div>
+            <blockquote class="vision-quote">
+              "도약하는 중소·벤처, 힘나는 소상공인, 살맛나는 골목상권과 활력 넘치는 대한민국 경제의 미래를 열어갑니다."
+            </blockquote>
+            <div class="vision-pillars">
+              <div class="pillar-item">
+                <div class="pillar-num">01</div>
+                <div>
+                  <h4>소상공인 사회안전망 구축</h4>
+                  <p>경영위기 극복, 디지털 전환, 안전한 폐업·재도전 지원</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-num">02</div>
+                <div>
+                  <h4>글로벌 창업·벤처 생태계</h4>
+                  <p>스타트업 코리아 실현 및 유니콘 기업 글로벌 진출</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-num">03</div>
+                <div>
+                  <h4>제조AI 및 공정 상생 생태계</h4>
+                  <p>중소기업 스마트화 지원 및 기술탈취 근절, 납품대금 연동제</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 국민이 쉽게 체감하는 3가지 변화 -->
+          <div class="about-benefits">
+            <div class="benefit-card">
+              <div class="benefit-icon blue">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              </div>
+              <div class="benefit-body">
+                <h4>골목상권에 활기를 불어넣습니다</h4>
+                <p>온누리상품권 10% 상시 할인 발행과 동행축제를 통해 서민 가계 부담을 덜고 전통시장과 소상공인의 매출 증대를 견인합니다.</p>
+              </div>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-icon green">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+              </div>
+              <div class="benefit-body">
+                <h4>누구나 아이디어만으로 창업할 수 있습니다</h4>
+                <p>민간 투자와 정부 자금이 결합된 세계적 창업 모델 'TIPS(팁스)'와 '모두의 창업 프로젝트'로 청년과 도전자들의 꿈을 현실로 만듭니다.</p>
+              </div>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-icon purple">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="benefit-body">
+                <h4>피땀 흘린 기술과 땀방울을 지켜드립니다</h4>
+                <p>중소기업이 어렵게 개발한 기술을 탈취당하지 않도록 '기술보호 원스톱 구제'와 원자재 가격 상승분을 반영하는 '납품대금 연동제'를 시행합니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션: 나의 맞춤 혜택 자가진단 설문 (체크리스트) -->
+    <section class="section survey-section" id="survey">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">1분 맞춤 진단</span>
+          <h2 class="section-title">"나는 중기부로부터 어떤 도움을 받을 수 있을까?"</h2>
+          <p class="section-desc">간단한 3단계 체크리스트 설문을 완료하시면, 내 상황에 꼭 맞는 정부 지원금, 세제 혜택, 판로 지원 사업을 즉시 찾아드립니다.</p>
+        </div>
+
+        <div class="survey-card" id="surveyCard">
+          <!-- 상단 진행률 프로그레스 바 -->
+          <div class="survey-progress-wrapper">
+            <div class="progress-info">
+              <span id="surveyStepText">질문 1 / 3</span>
+              <span id="surveyStepPercent">33% 완료</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-bar" id="surveyProgressBar" style="width: 33%;"></div>
+            </div>
+          </div>
+
+          <!-- 설문 컨테이너 -->
+          <div class="survey-wizard" id="surveyWizard">
+            <!-- 질문 1: 현재 나의 상태/역할 -->
+            <div class="survey-step active" id="surveyStep1" data-step="1">
+              <h3 class="step-question">Q1. 현재 귀하의 상황이나 역할에 가장 가까운 것은 무엇인가요?</h3>
+              <p class="step-instruction">가장 부합하는 항목 1개를 선택해 주세요.</p>
+              
+              <div class="survey-options-grid single-select">
+                <label class="survey-opt-card" data-val="startup">
+                  <input type="radio" name="surveyRole" value="startup">
+                  <div class="opt-icon">💡</div>
+                  <div class="opt-body">
+                    <h4>예비·청년 창업자</h4>
+                    <p>창업 아이디어나 기술이 있으며, 사업화 자금, 멘토링, 무료 공간이 필요해요.</p>
+                  </div>
+                  <span class="opt-check">✓</span>
+                </label>
+
+                <label class="survey-opt-card" data-val="smallbiz">
+                  <input type="radio" name="surveyRole" value="smallbiz">
+                  <div class="opt-icon">🏪</div>
+                  <div class="opt-body">
+                    <h4>소상공인·자영업자</h4>
+                    <p>식당, 카페, 전통시장 점포, 서비스업 등을 직접 운영하며 경영 안정이 필요해요.</p>
+                  </div>
+                  <span class="opt-check">✓</span>
+                </label>
+
+                <label class="survey-opt-card" data-val="scaleup">
+                  <input type="radio" name="surveyRole" value="scaleup">
+                  <div class="opt-icon">🚀</div>
+                  <div class="opt-body">
+                    <h4>스타트업·벤처기업</h4>
+                    <p>독자 기술/플랫폼을 보유하고 있으며, 대규모 R&D, 벤처투자 유치, 스케일업을 원해요.</p>
+                  </div>
+                  <span class="opt-check">✓</span>
+                </label>
+
+                <label class="survey-opt-card" data-val="sme">
+                  <input type="radio" name="surveyRole" value="sme">
+                  <div class="opt-icon">🏭</div>
+                  <div class="opt-body">
+                    <h4>중소 제조·뿌리기업</h4>
+                    <p>공장 및 가공 시설을 보유하고 있으며 스마트공장 도입, 수출, 납품단가 보장을 원해요.</p>
+                  </div>
+                  <span class="opt-check">✓</span>
+                </label>
+
+                <label class="survey-opt-card" data-val="citizen">
+                  <input type="radio" name="surveyRole" value="citizen">
+                  <div class="opt-icon">🛒</div>
+                  <div class="opt-body">
+                    <h4>일반 국민·직장인·소비자</h4>
+                    <p>전통시장 장보기 할인, 온누리상품권 혜택, 창업 교육 및 생활 절약에 관심이 있어요.</p>
+                  </div>
+                  <span class="opt-check">✓</span>
+                </label>
+              </div>
+
+              <div class="step-footer">
+                <div></div>
+                <button type="button" class="btn btn-primary" id="step1NextBtn" disabled>
+                  <span>다음 질문으로</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- 질문 2: 가장 절실한 필요 지원 (다중 선택) -->
+            <div class="survey-step" id="surveyStep2" data-step="2">
+              <h3 class="step-question">Q2. 지금 가장 필요한 지원이나 고민은 무엇인가요?</h3>
+              <p class="step-instruction">해당하는 항목을 모두 골라주세요 (복수 선택 가능).</p>
+
+              <div class="survey-options-grid multi-select">
+                <label class="survey-opt-card" data-val="fund">
+                  <input type="checkbox" name="surveyNeeds" value="fund">
+                  <div class="opt-icon">💰</div>
+                  <div class="opt-body">
+                    <h4>자금 및 정책 금융</h4>
+                    <p>창업 사업화 자금, 저금리 정책 대출, 벤처투자(TIPS/모태펀드) 유치</p>
+                  </div>
+                  <span class="opt-check">✓</span>
+                </label>
+
+                <label class="survey-opt-card" data-val="market">
+                  <input type="checkbox" name="surveyNeeds" value="market">
+                  <div class="opt-icon">🛍️</div>
+                  <div class="opt-body">
+                    <h4>판로 개척 & 소비 진작</h4>
+                    <p>동행축제 입점, 온누리상품권 가맹 및 할인, 공공조달 우선구매</p>
+                  </div>
+                  <span class="opt-check">✓</span>
+                </label>
+
+                <label class="survey-opt-card" data-val="tech">
+                  <input type="checkbox" name="surveyNeeds" value="tech">
+                  <div class="opt-icon">🤖</div>
+                  <div class="opt-body">
+                    <h4>AI·스마트화 및 디지털 전환</h4>
+                    <p>스마트 상점(테이블오더/키오스크), AI 스마트공장 구축, R&D 바우처</p>
+                  </div>
+                  <span class="opt-check">✓</span>
+                </label>
+
+                <label class="survey-opt-card" data-val="crisis">
+                  <input type="checkbox" name="surveyNeeds" value="crisis">
+                  <div class="opt-icon">🛡️</div>
+                  <div class="opt-body">
+                    <h4>경영 위기 극복 & 재도전</h4>
+                    <p>고금리 대환대출 지원, 폐업 점포 철거비(최대 250만 원), 재취업 교육</p>
+                  </div>
+                  <span class="opt-check">✓</span>
+                </label>
+
+                <label class="survey-opt-card" data-val="fair">
+                  <input type="checkbox" name="surveyNeeds" value="fair">
+                  <div class="opt-icon">⚖️</div>
+                  <div class="opt-body">
+                    <h4>공정거래 & 기술 보호</h4>
+                    <p>원자재 가격 납품대금 연동, 기술탈취 무료 법률 구제, 기술 임치</p>
+                  </div>
+                  <span class="opt-check">✓</span>
+                </label>
+
+                <label class="survey-opt-card" data-val="global">
+                  <input type="checkbox" name="surveyNeeds" value="global">
+                  <div class="opt-icon">🌐</div>
+                  <div class="opt-body">
+                    <h4>해외 수출 & K-브랜드 보호</h4>
+                    <p>수출바우처, 해외 규격인증, 글로벌 전시회 참가, 위조모방 차단</p>
+                  </div>
+                  <span class="opt-check">✓</span>
+                </label>
+              </div>
+
+              <div class="step-footer">
+                <button type="button" class="btn btn-secondary" id="step2PrevBtn">이전으로</button>
+                <button type="button" class="btn btn-primary" id="step2NextBtn" disabled>
+                  <span>다음 질문으로</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- 질문 3: 추가 조건 및 우대 체크 -->
+            <div class="survey-step" id="surveyStep3" data-step="3">
+              <h3 class="step-question">Q3. 추가로 해당하는 조건이 있다면 체크해주세요.</h3>
+              <p class="step-instruction">정부 지원사업 신청 시 가점 및 우대 혜택을 판별합니다 (선택사항).</p>
+
+              <div class="survey-checklist-wrap">
+                <label class="check-box-item">
+                  <input type="checkbox" name="surveyBonus" value="youth">
+                  <span class="custom-chk"></span>
+                  <div class="chk-desc">
+                    <strong>만 39세 이하 청년입니다</strong>
+                    <span>청년창업사관학교, 청년 전용 창업자금 등 우대 선발 혜택 대상</span>
+                  </div>
+                </label>
+
+                <label class="check-box-item">
+                  <input type="checkbox" name="surveyBonus" value="early">
+                  <span class="custom-chk"></span>
+                  <div class="chk-desc">
+                    <strong>창업 3년 이내 초기 기업이거나 아직 사업자등록 전입니다</strong>
+                    <span>초기창업패키지, 예비창업패키지 등 비즈니스 인큐베이팅 대상</span>
+                  </div>
+                </label>
+
+                <label class="check-box-item">
+                  <input type="checkbox" name="surveyBonus" value="local">
+                  <span class="custom-chk"></span>
+                  <div class="chk-desc">
+                    <strong>수도권 외 지방 소재 기업이거나 전통시장 내 상인입니다</strong>
+                    <span>지방성장펀드, 규제자유특구, 전통시장 특례보증 우선 지원</span>
+                  </div>
+                </label>
+
+                <label class="check-box-item">
+                  <input type="checkbox" name="surveyBonus" value="high_interest">
+                  <span class="custom-chk"></span>
+                  <div class="chk-desc">
+                    <strong>7% 이상 고금리 대출을 이용 중이거나 채무 조정이 필요합니다</strong>
+                    <span>소상공인 대환대출(저금리 전환) 및 경영안정자금 최우선 지원 대상</span>
+                  </div>
+                </label>
+              </div>
+
+              <div class="step-footer">
+                <button type="button" class="btn btn-secondary" id="step3PrevBtn">이전으로</button>
+                <button type="button" class="btn btn-primary btn-lg" id="submitSurveyBtn">
+                  <span>🎯 내 맞춤 진단 결과 확인하기</span>
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- 진단 결과 화면 (Result Screen) -->
+            <div class="survey-result" id="surveyResult" style="display: none;">
+              <!-- JS로 진단 결과 동적 렌더링 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션 2: 5대 주요 업무 인터랙티브 카드 -->
+    <section class="section duties-section" id="duties">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">주요 정책 분야</span>
+          <h2 class="section-title">국민 눈높이로 알기 쉬운 5대 핵심 업무</h2>
+          <p class="section-desc">어려운 행정 용어 대신, 국민과 기업이 실제로 누릴 수 있는 핵심 지원을 카테고리별로 확인해 보세요.</p>
+        </div>
+
+        <!-- 업무 카테고리 탭 -->
+        <div class="duty-tabs-wrapper">
+          <div class="duty-tabs" role="tablist">
+            <button class="duty-tab active" data-target="tab-smallbiz" role="tab" aria-selected="true">
+              <span class="tab-icon">🏪</span>
+              <span>1. 소상공인·전통시장</span>
+            </button>
+            <button class="duty-tab" data-target="tab-startup" role="tab" aria-selected="false">
+              <span class="tab-icon">🚀</span>
+              <span>2. 창업·벤처육성</span>
+            </button>
+            <button class="duty-tab" data-target="tab-sme" role="tab" aria-selected="false">
+              <span class="tab-icon">🏭</span>
+              <span>3. 중소기업·스마트제조</span>
+            </button>
+            <button class="duty-tab" data-target="tab-global" role="tab" aria-selected="false">
+              <span class="tab-icon">🌐</span>
+              <span>4. 글로벌 수출·판로</span>
+            </button>
+            <button class="duty-tab" data-target="tab-fair" role="tab" aria-selected="false">
+              <span class="tab-icon">⚖️</span>
+              <span>5. 공정거래·기술보호</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 탭 상세 콘텐츠 패널 -->
+        <div class="duty-content-area">
+          <!-- 1. 소상공인 & 전통시장 -->
+          <div class="duty-panel active" id="tab-smallbiz" role="tabpanel">
+            <div class="duty-panel-grid">
+              <div class="duty-panel-main">
+                <div class="duty-badge-header">
+                  <span class="panel-badge">생계와 일상의 든든한 우산</span>
+                  <h3>소상공인 자생력 강화 & 전통시장 활성화</h3>
+                </div>
+                <p class="duty-lead">
+                  대한민국 동네 상권과 골목의 숨결을 지킵니다. 고물가·고금리 속 경영 부담을 덜어드리고, 
+                  온누리상품권과 스마트 상점 도입을 통해 100년 가는 명품 가게로 성장하도록 돕습니다.
+                </p>
+                <div class="duty-checklist">
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>온누리상품권 할인 및 사용처 대폭 확대</strong>
+                      <p>최대 10% 상시 할인 발행, 충전식 카드형 보급 및 학원·병원 등 골목 가맹점 이용 확대</p>
+                    </div>
+                  </div>
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>소상공인 정책자금 및 대환대출 지원</strong>
+                      <p>고금리 대출을 저금리로 전환하고, 경영위기 극복을 위한 특례보증 및 이자 경감 지원</p>
+                    </div>
+                  </div>
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>희망리턴패키지 (원스톱 폐업·재취업·재창업)</strong>
+                      <p>부득이하게 폐업하는 소상공인의 점포 철거비(최대 250만 원) 지원 및 취업·재도전 교육 연계</p>
+                    </div>
+                  </div>
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>스마트 상점 & 백년가게 육성</strong>
+                      <p>테이블오더·키오스크 등 디지털 기기 도입 보조금 지급, 30년 이상 우수 점포 인증 및 홍보</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="duty-panel-side">
+                <div class="quick-service-box">
+                  <h4>관련 신청 및 공식 포털</h4>
+                  <ul class="quick-links-list">
+                    <li><a href="https://www.sbiz24.kr" target="_blank" rel="noopener noreferrer">소상공인24 (원스톱 신청) ↗</a></li>
+                    <li><a href="https://ols.semas.or.kr" target="_blank" rel="noopener noreferrer">소상공인 정책자금 누리집 ↗</a></li>
+                    <li><a href="https://onnurigift.or.kr" target="_blank" rel="noopener noreferrer">온누리상품권 통합포털 ↗</a></li>
+                    <li><a href="https://www.semas.or.kr" target="_blank" rel="noopener noreferrer">소상공인시장진흥공단 ↗</a></li>
+                  </ul>
+                  <div class="duty-tip-box">
+                    💡 <strong>꿀팁:</strong> 온누리상품권은 전통시장에서 결제 시 최대 40~50%의 높은 연말정산 소득공제 혜택을 받을 수 있습니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. 창업·벤처육성 -->
+          <div class="duty-panel" id="tab-startup" role="tabpanel">
+            <div class="duty-panel-grid">
+              <div class="duty-panel-main">
+                <div class="duty-badge-header">
+                  <span class="panel-badge">글로벌 혁신 유니콘으로</span>
+                  <h3>창업·벤처 생태계 조성 및 스타트업 코리아</h3>
+                </div>
+                <p class="duty-lead">
+                  청년과 혁신 창업자가 세계 무대로 뻗어나갈 수 있도록 창업 기획, 시드 투자, 정부 R&D 매칭, 
+                  스케일업(Scale-up)까지 전 주기를 촘촘하게 지원합니다.
+                </p>
+                <div class="duty-checklist">
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>TIPS (팁스) - 민간투자주도형 기술창업지원</strong>
+                      <p>민간 액셀러레이터가 1~2억 원을 투자하면 정부가 R&D 자금 최대 5억~7억 원을 매칭 지원</p>
+                    </div>
+                  </div>
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>초격차 스타트업 1000+ 프로젝트</strong>
+                      <p>시스템반도체, AI, 바이오 등 10대 신산업 딥테크 혁신기업을 선발하여 최대 11억 원 지원</p>
+                    </div>
+                  </div>
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>예비·초기·도약 패키지 창업지원</strong>
+                      <p>아이디어 발굴 단계부터 사업화 자금(최대 1억~3억 원)과 창업 멘토링 프로그램 제공</p>
+                    </div>
+                  </div>
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>글로벌 스타트업 코리아 펀드</strong>
+                      <p>국내외 벤처캐피털과 연계해 우리 스타트업의 실리콘밸리 등 해외 진출 적극 투자</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="duty-panel-side">
+                <div class="quick-service-box">
+                  <h4>관련 신청 및 공식 포털</h4>
+                  <ul class="quick-links-list">
+                    <li><a href="https://www.k-startup.go.kr" target="_blank" rel="noopener noreferrer">K-Startup 창업포털 ↗</a></li>
+                    <li><a href="https://www.jointips.or.kr" target="_blank" rel="noopener noreferrer">TIPS 공식 홈페이지 ↗</a></li>
+                    <li><a href="https://www.kised.or.kr" target="_blank" rel="noopener noreferrer">창업진흥원 ↗</a></li>
+                    <li><a href="https://www.kvca.or.kr" target="_blank" rel="noopener noreferrer">한국벤처캐피탈협회 ↗</a></li>
+                  </ul>
+                  <div class="duty-tip-box">
+                    💡 <strong>창업 팁:</strong> 사업자등록 전이라도 예비창업패키지를 통해 창업 사업화 자금과 무료 사무공간을 지원받을 수 있습니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. 중소기업·스마트제조 -->
+          <div class="duty-panel" id="tab-sme" role="tabpanel">
+            <div class="duty-panel-grid">
+              <div class="duty-panel-main">
+                <div class="duty-badge-header">
+                  <span class="panel-badge">제조 강국 대한민국의 혁신</span>
+                  <h3>중소기업 디지털 전환 & 스마트 제조혁신</h3>
+                </div>
+                <p class="duty-lead">
+                  대한민국 뿌리산업과 제조 중소기업이 AI와 데이터 기반의 스마트공장으로 진화할 수 있도록 지원하며, 
+                  R&D 기술개발과 탄소중립 ESG 대응 경쟁력을 강화합니다.
+                </p>
+                <div class="duty-checklist">
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>AI·자율형 스마트공장 보급 확산</strong>
+                      <p>생산 공정 자동화, IoT 센서 및 빅데이터 분석 도입으로 불량률 감소 및 생산성 30% 이상 향상</p>
+                    </div>
+                  </div>
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>중소기업 혁신바우처 및 R&D 지원</strong>
+                      <p>기술개발(R&D), 디자인, 마케팅, 컨설팅 비용을 정부 바우처 형태로 기업당 최대 5천만 원 지원</p>
+                    </div>
+                  </div>
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>규제자유특구 육성</strong>
+                      <p>지자체와 협력해 신산업(드론, 자율주행, 수소 등) 관련 규제를 파격 면제하는 실증 특구 운영</p>
+                    </div>
+                  </div>
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>중소기업 정책자금 (시설·운전자금 융자)</strong>
+                      <p>신용도가 부족하더라도 기술성과 사업성이 우수한 기업에 장기 저리 정책자금 공급</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="duty-panel-side">
+                <div class="quick-service-box">
+                  <h4>관련 신청 및 공식 포털</h4>
+                  <ul class="quick-links-list">
+                    <li><a href="https://www.bizinfo.go.kr" target="_blank" rel="noopener noreferrer">기업마당 (지원사업 통합조회) ↗</a></li>
+                    <li><a href="https://www.kosmes.or.kr" target="_blank" rel="noopener noreferrer">중소벤처기업진흥공단 ↗</a></li>
+                    <li><a href="https://www.smart-factory.kr" target="_blank" rel="noopener noreferrer">스마트공장 사업관리시스템 ↗</a></li>
+                    <li><a href="https://www.kibo.or.kr" target="_blank" rel="noopener noreferrer">기술보증기금 (기술보증) ↗</a></li>
+                  </ul>
+                  <div class="duty-tip-box">
+                    💡 <strong>혜택:</strong> 중소벤처24(smes.go.kr)에 접속하면 증명서 발급부터 정책자금 신청까지 한 번에 처리 가능합니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. 글로벌 수출·판로 -->
+          <div class="duty-panel" id="tab-global" role="tabpanel">
+            <div class="duty-panel-grid">
+              <div class="duty-panel-main">
+                <div class="duty-badge-header">
+                  <span class="panel-badge">세계 무대로 뻗어나가는 K-기업</span>
+                  <h3>수출 다변화 & K-브랜드 글로벌 판로 개척</h3>
+                </div>
+                <p class="duty-lead">
+                  K-뷰티, K-푸드 등 한류 열풍을 기회로 삼아 우수 중소기업 제품의 해외 온·오프라인 진출을 돕고, 
+                  글로벌 전자상거래 입점과 수출 규제 해소를 지원합니다.
+                </p>
+                <div class="duty-checklist">
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>수출바우처 사업</strong>
+                      <p>수출 준비부터 마케팅, 해외 규격인증, 바이어 매칭, 물류까지 원하는 서비스를 자유롭게 선택 지원</p>
+                    </div>
+                  </div>
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>K-뷰티·소비재 글로벌 메가 펀드 및 팝업 스토어</strong>
+                      <p>미국, 일본, 동남아, 유럽 등 현지 유통망 입점 및 유명 온·오프라인 쇼핑몰 특별 기획전</p>
+                    </div>
+                  </div>
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>글로벌비즈니스센터 (GBC) 운영</strong>
+                      <p>전 세계 주요 거점(미국, 베트남, 독일 등)에 사무공간, 법률·회계 자문, 현지 네트워크 제공</p>
+                    </div>
+                  </div>
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>동행축제 (전국민 소비 진작 페스티벌)</strong>
+                      <p>봄·가을·겨울 연 3회 이상 전 국민이 참여하는 대규모 중소기업·소상공인 할인 판촉 행사</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="duty-panel-side">
+                <div class="quick-service-box">
+                  <h4>관련 신청 및 공식 포털</h4>
+                  <ul class="quick-links-list">
+                    <li><a href="https://www.exportvoucher.com" target="_blank" rel="noopener noreferrer">수출바우처 포털 ↗</a></li>
+                    <li><a href="https://k-brand.bizinfo.go.kr" target="_blank" rel="noopener noreferrer">브랜드K 공식 홍보관 ↗</a></li>
+                    <li><a href="https://k-donghang.org" target="_blank" rel="noopener noreferrer">대한민국 동행축제 ↗</a></li>
+                    <li><a href="https://www.mss.go.kr" target="_blank" rel="noopener noreferrer">중소벤처기업부 글로벌지원과 ↗</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. 공정거래·기술보호 -->
+          <div class="duty-panel" id="tab-fair" role="tabpanel">
+            <div class="duty-panel-grid">
+              <div class="duty-panel-main">
+                <div class="duty-badge-header">
+                  <span class="panel-badge">공정한 거래, 정당한 대가</span>
+                  <h3>상생협력 생태계 조성 & 기술탈취 원스톱 구제</h3>
+                </div>
+                <p class="duty-lead">
+                  대기업과 중소기업 간 불공정 관행을 뿌리뽑고, 원자재 가격 상승 위험을 나누며, 
+                  소중한 기술 아이디어가 도용당하지 않도록 정부가 든든한 방패가 되어 드립니다.
+                </p>
+                <div class="duty-checklist">
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>납품대금 연동제 법제화 및 안착</strong>
+                      <p>원자재 가격이 일정 비율 이상 오르면 납품대금을 의무적으로 협의·인상하여 수탁기업 보호</p>
+                    </div>
+                  </div>
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>기술탈취 방지 '원스톱 권리구제 신문고'</strong>
+                      <p>기술 유출 피해 발생 시 법률 대리인 선임, 기술 침해 입증 지원, 소송 비용 바우처 지원</p>
+                    </div>
+                  </div>
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>중소기업 기술자료 임치 무료 지원</strong>
+                      <p>핵심 기술 자료를 공인된 공공기관에 보관하여 기술 도용 및 모방 위험을 사전에 원천 차단</p>
+                    </div>
+                  </div>
+                  <div class="check-item">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <strong>대·중소기업 상생협력기금 조성</strong>
+                      <p>대기업의 자발적 출연을 바탕으로 중소 협력사의 스마트화, 안전 관리, 복지 개선 투자</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="duty-panel-side">
+                <div class="quick-service-box">
+                  <h4>관련 신청 및 공식 포털</h4>
+                  <ul class="quick-links-list">
+                    <li><a href="https://www.win-win.or.kr" target="_blank" rel="noopener noreferrer">대·중소기업·농어업협력재단 ↗</a></li>
+                    <li><a href="https://www.tradesecret.or.kr" target="_blank" rel="noopener noreferrer">기술보호울타리 (원스톱 신고) ↗</a></li>
+                    <li><a href="https://yeondong.win-win.or.kr" target="_blank" rel="noopener noreferrer">납품대금 연동제 안내포털 ↗</a></li>
+                  </ul>
+                  <div class="duty-tip-box">
+                    ⚖️ <strong>보호 안내:</strong> 기술탈취 피해를 입었을 경우 국번없이 1357 또는 기술보호 울타리에서 무료 비밀 법률상담을 신청하세요.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션 3: 나에게 맞는 중기부 맞춤 정책 찾기 (Interactive Finder) -->
+    <section class="section finder-section" id="finder">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">국민 맞춤 서비스</span>
+          <h2 class="section-title">나에게 딱 맞는 중기부 혜택 찾기</h2>
+          <p class="section-desc">귀하의 신분과 필요한 도움을 선택하시면, 신청 가능한 대표 사업을 즉시 추천해 드립니다.</p>
+        </div>
+
+        <div class="finder-card">
+          <!-- 스텝 1: 대상 선택 -->
+          <div class="finder-step">
+            <label class="step-label"><strong>STEP 1.</strong> 나는 누구인가요? (대상 선택)</label>
+            <div class="finder-options" id="targetFilters">
+              <button class="filter-btn active" data-type="all">전체보기</button>
+              <button class="filter-btn" data-type="startup">예비·청년 창업자</button>
+              <button class="filter-btn" data-type="smallbiz">소상공인·자영업자</button>
+              <button class="filter-btn" data-type="sme">중소·벤처기업 대표</button>
+              <button class="filter-btn" data-type="citizen">일반 국민·소비자</button>
+            </div>
+          </div>
+
+          <!-- 스텝 2: 관심 분야 선택 -->
+          <div class="finder-step">
+            <label class="step-label"><strong>STEP 2.</strong> 어떤 도움이 가장 필요하신가요? (관심 분야)</label>
+            <div class="finder-options" id="topicFilters">
+              <button class="filter-chip active" data-topic="all">모든 분야</button>
+              <button class="filter-chip" data-topic="fund">💰 자금 및 대출/투자</button>
+              <button class="filter-chip" data-topic="market">🛍️ 소비 할인 및 판로/마케팅</button>
+              <button class="filter-chip" data-topic="tech">🤖 기술개발 및 스마트/AI</button>
+              <button class="filter-chip" data-topic="rechallenge">🔄 폐업지원 및 재도전</button>
+            </div>
+          </div>
+
+          <!-- 추천 결과 목록 -->
+          <div class="finder-results-header">
+            <span class="result-count">추천 정책: <strong id="resultCountNumber">6</strong>건</span>
+            <span class="result-guide">카드를 클릭하면 상세 내용과 신청 링크가 열립니다.</span>
+          </div>
+
+          <div class="policy-card-grid" id="policyGrid">
+            <!-- JS 동적 렌더링 -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션 4: 온누리상품권 혜택 계산기 (Interactive Calculator) -->
+    <section class="section onnuri-section" id="onnuri">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">가계 절약 & 골목 상생</span>
+          <h2 class="section-title">온누리상품권 혜택 시뮬레이터</h2>
+          <p class="section-desc">소상공인과 전통시장을 살리고 국민 가계부는 아끼는 온누리상품권! 내 예상 절약 금액을 직접 계산해보세요.</p>
+        </div>
+
+        <div class="calculator-container">
+          <div class="calc-input-panel">
+            <h3>월 평균 전통시장 / 골목상권 지출액</h3>
+            <p class="calc-subtext">외식, 식료품, 장보기, 학원, 병원 등 골목 가맹점 결제 예상 금액을 선택해 보세요.</p>
+            
+            <div class="calc-slider-box">
+              <div class="calc-display-amount">
+                <span id="sliderValueText">500,000</span>원 / 월
+              </div>
+              <input type="range" id="expenseSlider" min="50000" max="2000000" step="50000" value="500000" class="custom-range" aria-label="월 지출액 슬라이더">
+              <div class="range-marks">
+                <span>5만</span>
+                <span>50만</span>
+                <span>100만</span>
+                <span>150만</span>
+                <span>200만</span>
+              </div>
+            </div>
+
+            <div class="quick-amount-buttons">
+              <button class="btn-amt" data-val="200000">20만 원</button>
+              <button class="btn-amt" data-val="500000">50만 원</button>
+              <button class="btn-amt" data-val="1000000">100만 원</button>
+              <button class="btn-amt" data-val="1500000">150만 원</button>
+            </div>
+
+            <div class="onnuri-info-pills">
+              <div class="info-pill">
+                <span class="pill-badge">상시 10%</span>
+                <span>충전식 카드형 즉시 할인</span>
+              </div>
+              <div class="info-pill">
+                <span class="pill-badge">최대 50%</span>
+                <span>전통시장 소득공제율</span>
+              </div>
+              <div class="info-pill">
+                <span class="pill-badge">카드 그대로</span>
+                <span>쓰던 신용/체크카드 등록 가능</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-result-panel">
+            <h4 class="calc-result-title">1년 동안 받게 되는 총 혜택</h4>
+            
+            <div class="total-benefit-box">
+              <span class="benefit-sub">연간 예상 절약 총액</span>
+              <div class="benefit-number">
+                <span id="totalAnnualSavings">600,000</span>원
+              </div>
+              <span class="benefit-tag">실제 현금 할인 + 소득공제 절세 추정액</span>
+            </div>
+
+            <div class="benefit-breakdown">
+              <div class="breakdown-item">
+                <div class="breakdown-label">
+                  <span class="icon-dot blue"></span>
+                  <span>10% 즉시 충전 할인 (현금 절약)</span>
+                </div>
+                <strong id="instantDiscountAnnual">600,000원/년</strong>
+              </div>
+              <div class="breakdown-item">
+                <div class="breakdown-label">
+                  <span class="icon-dot green"></span>
+                  <span>전통시장 소득공제 인정액 (40% 기준)</span>
+                </div>
+                <strong id="taxDeductionAnnual">2,400,000원</strong>
+              </div>
+            </div>
+
+            <div class="calc-actions">
+              <a href="https://onnurigift.or.kr" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                <span>온누리상품권 앱 다운로드 & 가맹점 찾기</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션 5: 최신 뉴스 기사 및 정책 동향 (실제 기사 URL 삽입) -->
+    <section class="section news-section" id="news">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">언론 및 정부 브리핑</span>
+          <h2 class="section-title">중소벤처기업부 최신 뉴스 & 정책 동향</h2>
+          <p class="section-desc">공식 보도자료 및 주요 언론사 최신 기사 원문을 직접 확인하고 정책 변화를 빠르게 파악하세요.</p>
+        </div>
+
+        <!-- 뉴스 필터 컨트롤 -->
+        <div class="news-controls">
+          <div class="news-category-filters" id="newsFilters">
+            <button class="news-filter-btn active" data-cat="all">전체 뉴스</button>
+            <button class="news-filter-btn" data-cat="startup">창업·벤처/AI</button>
+            <button class="news-filter-btn" data-cat="smallbiz">소상공인·상권</button>
+            <button class="news-filter-btn" data-cat="sme">중소기업·R&D</button>
+            <button class="news-filter-btn" data-cat="global">글로벌·상생</button>
+          </div>
+          <div class="news-search-box">
+            <input type="text" id="newsSearchInput" placeholder="뉴스 기사 제목/내용 검색">
+          </div>
+        </div>
+
+        <!-- 뉴스 카드 그리드 -->
+        <div class="news-grid" id="newsGrid">
+          <!-- 자바스크립트로 실제 기사 URL 및 상세 내역 렌더링 -->
+        </div>
+
+        <!-- 뉴스 하단 바로가기 링크 바 -->
+        <div class="news-external-banner">
+          <div class="banner-text">
+            <h4>실시간 중기부 공식 보도자료를 더 보고 싶으신가요?</h4>
+            <p>대한민국 정책브리핑 및 중기부 대변인실에서 매일 배포하는 공식 브리핑과 카드뉴스를 바로 확인하세요.</p>
+          </div>
+          <div class="banner-buttons">
+            <a href="https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=86" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <span>중기부 보도자료 공식게시판 ↗</span>
+            </a>
+            <a href="https://www.korea.kr/news/policyNewsList.do" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <span>대한민국 정책브리핑 ↗</span>
+            </a>
+            <a href="https://search.naver.com/search.naver?where=news&query=%EC%A4%91%EC%86%8C%EB%B2%A4%EC%B2%98%EA%B8%B0%EC%97%85%EB%B6%80" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <span>네이버 포털 실시간 뉴스 ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션 6: 알기 쉬운 중기부 경제 용어 사전 -->
+    <section class="section dictionary-section" id="dictionary">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">알기 쉬운 정책 용어</span>
+          <h2 class="section-title">국민 눈높이 중기부 용어 사전</h2>
+          <p class="section-desc">뉴스나 기사에서 자주 보지만 헷갈렸던 핵심 정책 용어를 3줄로 알기 쉽게 풀어드립니다.</p>
+        </div>
+
+        <div class="dict-grid" id="dictGrid">
+          <!-- JS 렌더링 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션 7: 국민 필수 서비스 통합 포털 안내 (Quick Link Portals) -->
+    <section class="section portal-section" id="portals">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">원클릭 서비스</span>
+          <h2 class="section-title">자주 찾는 중기부 공식 온라인 플랫폼</h2>
+          <p class="section-desc">서류 발급부터 정책자금 신청, 창업 지원, 상권 분석까지 원하는 서비스로 바로 이동하세요.</p>
+        </div>
+
+        <div class="portal-grid">
+          <a href="https://www.bizinfo.go.kr" target="_blank" rel="noopener noreferrer" class="portal-card">
+            <div class="portal-icon">📋</div>
+            <div class="portal-info">
+              <h3>기업마당</h3>
+              <p>대한민국 모든 정부부처·지자체의 중소기업 지원사업을 한눈에 통합 검색</p>
+              <span class="portal-url">bizinfo.go.kr ↗</span>
+            </div>
+          </a>
+
+          <a href="https://www.k-startup.go.kr" target="_blank" rel="noopener noreferrer" class="portal-card">
+            <div class="portal-icon">🚀</div>
+            <div class="portal-info">
+              <h3>K-Startup (창업지원포털)</h3>
+              <p>예비 창업자 교육부터 사업화 자금, 멘토링, 창업공간 입주 신청 총괄</p>
+              <span class="portal-url">k-startup.go.kr ↗</span>
+            </div>
+          </a>
+
+          <a href="https://www.sbiz24.kr" target="_blank" rel="noopener noreferrer" class="portal-card">
+            <div class="portal-icon">🏪</div>
+            <div class="portal-info">
+              <h3>소상공인24</h3>
+              <p>소상공인 정책자금 신청, 점포 개선, 희망리턴패키지 원스톱 민원 서비스</p>
+              <span class="portal-url">sbiz24.kr ↗</span>
+            </div>
+          </a>
+
+          <a href="https://www.smes.go.kr" target="_blank" rel="noopener noreferrer" class="portal-card">
+            <div class="portal-icon">🏢</div>
+            <div class="portal-info">
+              <h3>중소벤처24</h3>
+              <p>중소기업 확인서, 소상공인 확인서 온라인 무료 발급 및 통합 민원</p>
+              <span class="portal-url">smes.go.kr ↗</span>
+            </div>
+          </a>
+
+          <a href="https://www.jointips.or.kr" target="_blank" rel="noopener noreferrer" class="portal-card">
+            <div class="portal-icon">💡</div>
+            <div class="portal-info">
+              <h3>TIPS (팁스 창업공간)</h3>
+              <p>민간투자 연계 기술창업 지원 프로그램, 글로벌 액셀러레이터 네트워크</p>
+              <span class="portal-url">jointips.or.kr ↗</span>
+            </div>
+          </a>
+
+          <a href="https://onnurigift.or.kr" target="_blank" rel="noopener noreferrer" class="portal-card">
+            <div class="portal-icon">💳</div>
+            <div class="portal-info">
+              <h3>온누리상품권 포털</h3>
+              <p>충전식 카드형 온누리상품권 앱 설치, 가맹점 지도 찾기 및 혜택 조회</p>
+              <span class="portal-url">onnurigift.or.kr ↗</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 상세 보기 팝업 모달 -->
+  <div class="modal-backdrop" id="policyModal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modalCloseBtn" aria-label="닫기">&times;</button>
+      <div class="modal-header">
+        <span class="modal-badge" id="modalBadge">지원사업</span>
+        <h3 id="modalTitle">정책 제목</h3>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- JS 동적 내용 -->
+      </div>
+      <div class="modal-footer">
+        <a href="#" target="_blank" rel="noopener noreferrer" id="modalActionBtn" class="btn btn-primary">
+          <span>공식 신청 페이지 바로가기</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+        <button class="btn btn-secondary" id="modalCancelBtn">닫기</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 푸터 -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg viewBox="0 0 40 40" width="30" height="30" aria-hidden="true">
+              <circle cx="20" cy="20" r="18" fill="#ffffff" />
+              <path d="M12 21 L18 27 L28 14" stroke="#004ea2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+            <span>중소벤처기업부</span>
+          </div>
+          <p class="footer-address">
+            (30121) 세종특별자치시 가름로 180 (어진동) 세종파이낸스센터 3차 중소벤처기업부<br>
+            대표전화: <strong>1357</strong> (중소기업·소상공인 통합콜센터) | 평일 09:00 ~ 18:00
+          </p>
+        </div>
+        <div class="footer-links-group">
+          <h4>주요 메뉴</h4>
+          <ul>
+            <li><a href="#about">중기부 소개</a></li>
+            <li><a href="#survey">혜택 자가진단</a></li>
+            <li><a href="#duties">5대 핵심업무</a></li>
+            <li><a href="#finder">맞춤정책 찾기</a></li>
+            <li><a href="#news">최신 정책뉴스</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>공식 채널</h4>
+          <ul>
+            <li><a href="https://www.mss.go.kr" target="_blank" rel="noopener noreferrer">중소벤처기업부 누리집</a></li>
+            <li><a href="https://www.korea.kr" target="_blank" rel="noopener noreferrer">대한민국 정책브리핑</a></li>
+            <li><a href="https://www.youtube.com/@smbizgov" target="_blank" rel="noopener noreferrer">중기부 유튜브 채널</a></li>
+            <li><a href="https://blog.naver.com/bizinfo1357" target="_blank" rel="noopener noreferrer">중기부 공식 블로그</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          본 웹 애플리케이션은 국민의 중소벤처기업부 정책 이해 및 정보 접근성을 돕기 위해 제작된 안내용 인터랙티브 웹 앱입니다.
+          <br>&copy; Ministry of SMEs and Startups Information Guide. All rights reserved.
+        </p>
+        <div class="back-to-top">
+          <a href="#hero" class="btn-top" aria-label="맨 위로 이동">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg>
+            <span>TOP</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 알림 토스트 메시지 -->
+  <div id="toast" class="toast" role="alert" aria-live="assertive"></div>
+
+  <!-- 순수 JS 스크립트 연결 (더블클릭 실행 시 CORS 오류 없이 즉시 구동) -->
+  <script src="app.js"></script>
+</body>
+</html>
